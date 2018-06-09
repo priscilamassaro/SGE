@@ -6,3 +6,6 @@ Contruir um CRUD de um sistema para gerenciamento de estoque de produtos para ve
 
 # Tecnologia
 Desenvolvido na linguagem C#.
+Entity Framework
+MVVM
+WPF
