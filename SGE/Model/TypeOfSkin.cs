@@ -8,5 +8,8 @@ namespace Model
 {
     class TypeOfSkin
     {
+        public int TypeOfSkinID { get; set; }
+        
+        public string Type { get; set; }
     }
 }
