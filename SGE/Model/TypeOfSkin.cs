@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Model
 {
-    class TypeOfSkin
+    public class TypeOfSkin
     {
         public int TypeOfSkinID { get; set; }
         
