@@ -24,5 +24,10 @@ namespace WpfView
         {
             InitializeComponent();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            In
+        }
     }
 }
