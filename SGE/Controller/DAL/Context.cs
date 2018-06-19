@@ -12,7 +12,11 @@ namespace Controller.DAL
     {
         public Context() : base("strConn")
         {
+            //Database.SetInitializer(new CreateDatabaseIfNotExists<Contexto>());
 
+            //Database.SetInitializer(new DropCreateDatabaseAlways<Contexto>());
+
+            Database.SetInitializer(new DropCreateDatabaseIfModelChanges<Context>());
         }
         public DbSet<Product> products { get; set; }
         public DbSet<Category> categories { get; set; }

@@ -17,19 +17,23 @@
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <TextBox x:Name="TxtName" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="48,77,0,0" TextWrapping="Wrap" Text="Insira o nome do produto" VerticalAlignment="Top" Width="259" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
-        <Button x:Name="BtnRegisterProduct" Grid.Column="1" Content="Cadastrar Produto" HorizontalAlignment="Left" Margin="548,239,0,0" VerticalAlignment="Top" Width="108" RenderTransformOrigin="0.56,-0.3" Grid.Row="1"/>
-        <TextBox x:Name="TxtDescription" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="327,77,0,0" TextWrapping="Wrap" Text="Insira a descrição do produto" VerticalAlignment="Top" Width="329" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
+        <Button x:Name="BtnRegisterProduct" Grid.Column="1" Content="Cadastrar Produto" HorizontalAlignment="Left" Margin="536,205,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.56,-0.3" Grid.Row="1" Click="BtnRegisterProduct_Click" Height="24"/>
+        <TextBox x:Name="TxtDescription" Grid.Column="1" HorizontalAlignment="Left" Height="78" Margin="48,201,0,0" TextWrapping="Wrap" Text="Insira a descrição do produto" VerticalAlignment="Top" Width="259" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
         <Label x:Name="LabelName" Grid.Column="1" Content="Nome" HorizontalAlignment="Left" Margin="48,51,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-        <Label x:Name="LabelDescription" Grid.Column="1" Content="Descrição" HorizontalAlignment="Left" Margin="327,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.789,0.654" Grid.Row="1"/>
+        <Label x:Name="LabelDescription" Grid.Column="1" Content="Descrição" HorizontalAlignment="Left" Margin="48,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.789,0.654" Grid.Row="1"/>
         <Label x:Name="LabelRegisterTitle" Content="Cadastro" Grid.Column="1" HorizontalAlignment="Left" Margin="298,10,0,0" VerticalAlignment="Top" Height="29" RenderTransformOrigin="0.088,0" Grid.Row="1" FontWeight="Bold" FontSize="14"/>
-        <Label x:Name="LabelCategory" Grid.Column="1" Content="Categoria" HorizontalAlignment="Left" Margin="48,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.607,1.231" Height="26" Grid.Row="1"/>
-        <TextBox x:Name="TxtCategory" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="48,131,0,0" TextWrapping="Wrap" Text="Insira a categoria do produto" VerticalAlignment="Top" Width="259" TextChanged="TextBox_TextChanged" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
-        <Label x:Name="LabelSubCategory" Grid.Column="1" Content="SubCategoria" HorizontalAlignment="Left" Margin="48,164,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,-0.346" Grid.Row="1"/>
-        <TextBox x:Name="TxtSubCategory" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="48,190,0,0" TextWrapping="Wrap" Text="Insira a subcategoria" VerticalAlignment="Top" Width="259" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
-        <Label x:Name="LabelTypeOfSkin" Grid.Column="1" Content="Tipo de Pele" HorizontalAlignment="Left" Margin="327,164,0,0" VerticalAlignment="Top" Grid.Row="1"/>
-        <TextBox x:Name="TxtTypeOfSkin" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="327,190,0,0" TextWrapping="Wrap" Text="Insira o tipo de pele" VerticalAlignment="Top" Width="329" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
+        <Label x:Name="LabelCategory" Grid.Column="1" Content="Categoria" HorizontalAlignment="Left" Margin="327,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.607,1.231" Height="26" Grid.Row="1"/>
+        <TextBox x:Name="TxtCategory" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="327,77,0,0" TextWrapping="Wrap" Text="Insira a categoria do produto" VerticalAlignment="Top" Width="329" TextChanged="TextBox_TextChanged" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
+        <Label x:Name="LabelSubCategory" Grid.Column="1" Content="SubCategoria" HorizontalAlignment="Left" Margin="48,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,-0.346" Grid.Row="1"/>
+        <TextBox x:Name="TxtSubCategory" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="48,139,0,0" TextWrapping="Wrap" Text="Insira a subcategoria" VerticalAlignment="Top" Width="259" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
+        <Label x:Name="LabelTypeOfSkin" Grid.Column="1" Content="Tipo de Pele" HorizontalAlignment="Left" Margin="327,113,0,0" VerticalAlignment="Top" Grid.Row="1"/>
+        <TextBox x:Name="TxtTypeOfSkin" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="327,139,0,0" TextWrapping="Wrap" Text="Insira o tipo de pele" VerticalAlignment="Top" Width="189" Grid.Row="1" FontStyle="Italic" FontSize="11" UndoLimit="102" Foreground="#FF232323"/>
         <Menu x:Name="Menu" HorizontalAlignment="Left" Height="343" Grid.Row="1" VerticalAlignment="Top" Width="88"/>
         <Image x:Name="Logo" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="88"/>
+        <TextBox x:Name="TxtPrice" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="536,138,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Insira o preço" VerticalAlignment="Top" Width="120" FontStyle="Italic" FontSize="11"/>
+        <Label x:Name="LabelQuantity" Content="Quantidade" Grid.Column="1" HorizontalAlignment="Left" Margin="327,175,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="0.526,1.385"/>
+        <TextBox x:Name="TxtQuantity" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="327,206,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Insira a quantidade" VerticalAlignment="Top" Width="189"/>
+        <Label x:Name="LabelPrice" Content="Preço" Grid.Column="1" HorizontalAlignment="Left" Margin="536,113,0,0" Grid.Row="1" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

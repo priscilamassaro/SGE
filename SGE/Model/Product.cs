@@ -16,7 +16,7 @@ namespace Model
 
         public int Quantity { get; set; }
 
-        public int Price { get; set; }
+        public double Price { get; set; }
 
         public bool Available { get; set; }
     }
