@@ -19,5 +19,11 @@ namespace Model
         public double Price { get; set; }
 
         public bool Available { get; set; }
+
+        // relacionamento
+        public int CategoryID { get; set; }
+
+        public virtual Category _Category { get; set; }
+
     }
 }
