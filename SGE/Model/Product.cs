@@ -25,5 +25,9 @@ namespace Model
 
         public virtual Category _Category { get; set; }
 
+        public int TypeOfSkin { get; set; }
+
+        public virtual TypeOfSkin _TypeOfSkin { get; set; }
+
     }
 }

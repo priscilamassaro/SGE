@@ -13,5 +13,10 @@ namespace Model
         public string Name { get; set; }
 
         public string Description { get; set; }
+
+        // relacionamento
+        public int CategoryID { get; set; }
+
+        public virtual Category _Category { get; set; }
     }
 }

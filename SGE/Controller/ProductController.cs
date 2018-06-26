@@ -38,7 +38,7 @@ namespace Controller
             {
                 context.products.Remove(prod);
             }
-        }
+        }  
 
         public IList<Product> ListByName(string name)
         {
@@ -46,6 +46,11 @@ namespace Controller
         }
 
         public IList<Product> ListAll()
+        {
+            return context.products.ToList();
+        }
+
+        public IList<Product> ListCategoryOptions()
         {
             return context.products.ToList();
         }
