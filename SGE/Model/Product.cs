@@ -14,20 +14,19 @@ namespace Model
 
         public string Name { get; set; }
 
+        // relacionamento
+        public int CategoryID { get; set; }
+       
+        public virtual Category _Category { get; set; }
+                
+        public int TypeOfSkinID { get; set; }
+
+        public virtual TypeOfSkin _TypeOfSkin { get; set; }
+      
         public int Quantity { get; set; }
 
         public double Price { get; set; }
 
         public bool Available { get; set; }
-
-        // relacionamento
-        public int CategoryID { get; set; }
-
-        public virtual Category _Category { get; set; }
-
-        public int TypeOfSkin { get; set; }
-
-        public virtual TypeOfSkin _TypeOfSkin { get; set; }
-
     }
 }

@@ -11,6 +11,7 @@ namespace Controller
     public class ProductController
     {
         private Context context = new Context();
+
         public void AddProduct(Product entity)
         {
             entity.Available = true;

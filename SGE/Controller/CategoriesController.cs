@@ -13,6 +13,5 @@ namespace Controller
         {
             return ctx.categories.ToList();
         }
-
     }
 }
