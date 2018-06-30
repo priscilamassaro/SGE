@@ -26,6 +26,7 @@ namespace WpfView
                 prod.Name = TxtName.Text;
                 prod.Price = double.Parse(TxtPrice.Text);
                 prod.Quantity = int.Parse(TxtQuantity.Text);
+                prod.CategoryID = ((Category)SelectCategory.SelectedItem).CategoryID;
                 
                 productController.AddProduct(prod);
                 MessageBox.Show("Produto salvo com sucesso!");
