@@ -17,7 +17,6 @@ namespace Controller
             entity.Available = true;
             context.products.Add(entity);
             context.SaveChanges();
-
         }
 
         public Product FindByID(int id)

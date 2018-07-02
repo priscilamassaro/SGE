@@ -14,9 +14,9 @@ namespace Model
         [Required(ErrorMessage = "Campo obrigatório")]
         public string Name { get; set; }
 
-        // relacionamento
-        public int CategoryID { get; set; }
+        //// relacionamento
+        //public int CategoryID { get; set; }
 
-        public virtual Category _Category { get; set; }
+        //public virtual Category _Category { get; set; }
     }
 }

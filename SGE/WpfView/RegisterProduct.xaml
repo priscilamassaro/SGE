@@ -26,8 +26,8 @@
         <Label x:Name="LabelName" Grid.Column="1" Content="Nome" HorizontalAlignment="Left" Margin="48,51,0,0" VerticalAlignment="Top" Grid.Row="1"/>
         <Label x:Name="LabelDescription" Grid.Column="1" Content="Descrição" HorizontalAlignment="Left" Margin="48,175,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.789,0.654" Grid.Row="1" Grid.ColumnSpan="2"/>
         <Label x:Name="LabelRegisterTitle" Content="Cadastro de produto" Grid.Column="1" HorizontalAlignment="Left" Margin="48,10,0,0" VerticalAlignment="Top" Height="29" RenderTransformOrigin="0.088,0" Grid.Row="1" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2"/>
-        <Label x:Name="LabelCategory" Grid.Column="2" Content="Categoria" HorizontalAlignment="Left" Margin="219,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.607,1.231" Height="26" Grid.Row="1"/>
-        <Label x:Name="LabelSubCategory" Grid.Column="1" Content="SubCategoria" HorizontalAlignment="Left" Margin="48,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,-0.346" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <!--<Label x:Name="LabelCategory" Grid.Column="2" Content="Categoria" HorizontalAlignment="Left" Margin="219,51,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.607,1.231" Height="26" Grid.Row="1"/>-->
+        <!--<Label x:Name="LabelSubCategory" Grid.Column="1" Content="SubCategoria" HorizontalAlignment="Left" Margin="48,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,-0.346" Grid.Row="1" Grid.ColumnSpan="2"/>-->
         <Label x:Name="LabelTypeOfSkin" Grid.Column="2" Content="Tipo de Pele" HorizontalAlignment="Left" Margin="219,113,0,0" VerticalAlignment="Top" Grid.Row="1"/>
         <Menu x:Name="Menu" HorizontalAlignment="Left" Height="343" Grid.Row="1" VerticalAlignment="Top" Width="88" Grid.RowSpan="2"/>
         <Image x:Name="Logo" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="88"/>

@@ -35,12 +35,12 @@ namespace Controller.DAL
             context.categories.Add(new Category { Name = "Fragrâncias" });
             context.categories.Add(new Category { Name = "Homens" });
 
-            context.subCategories.Add(new SubCategory { Name = "Botanical Effects", CategoryID=1 });
-            context.subCategories.Add(new SubCategory { Name = "TimeWise", CategoryID = 1 });
-            context.subCategories.Add(new SubCategory { Name = "TimeWise Repair", CategoryID = 1 });
-            context.subCategories.Add(new SubCategory { Name = "Cuidados com a Pele com Tendência à Acne", CategoryID = 1 });
-            context.subCategories.Add(new SubCategory { Name = "MKMen", CategoryID = 1 }); 
-            context.subCategories.Add(new SubCategory { Name = "Satin Lips", CategoryID = 1 });
+            //context.subCategories.Add(new SubCategory { Name = "Botanical Effects", CategoryID=1 });
+            //context.subCategories.Add(new SubCategory { Name = "TimeWise", CategoryID = 1 });
+            //context.subCategories.Add(new SubCategory { Name = "TimeWise Repair", CategoryID = 1 });
+            //context.subCategories.Add(new SubCategory { Name = "Cuidados com a Pele com Tendência à Acne", CategoryID = 1 });
+            //context.subCategories.Add(new SubCategory { Name = "MKMen", CategoryID = 1 }); 
+            //context.subCategories.Add(new SubCategory { Name = "Satin Lips", CategoryID = 1 });
 
             context.typeOfSkins.Add(new TypeOfSkin { Type = "Seca" });
             context.typeOfSkins.Add(new TypeOfSkin { Type = "Normal" });

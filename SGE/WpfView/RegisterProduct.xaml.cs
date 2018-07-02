@@ -27,7 +27,8 @@ namespace WpfView
                 prod.Price = double.Parse(TxtPrice.Text);
                 prod.Quantity = int.Parse(TxtQuantity.Text);
                 prod.CategoryID = ((Category)SelectCategory.SelectedItem).CategoryID;
-                
+                prod.TypeOfSkinID = ((TypeOfSkin)SelectTypeOfSkin.SelectedItem).TypeOfSkinID;
+
                 productController.AddProduct(prod);
                 MessageBox.Show("Produto salvo com sucesso!");
                 this.Close();
@@ -49,9 +50,9 @@ namespace WpfView
 
             SelectCategory.ItemsSource = categoriesController.ListAll();
 
-            SubCategoriesController subCategoriesController = new SubCategoriesController();
+            //SubCategoriesController subCategoriesController = new SubCategoriesController();
 
-            SelectSubCategory.ItemsSource = subCategoriesController.ListAll();
+            //SelectSubCategory.ItemsSource = subCategoriesController.ListAll();
 
             TypeOfSkinController typeOfSkinController = new TypeOfSkinController();
 

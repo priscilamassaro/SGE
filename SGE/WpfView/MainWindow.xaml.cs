@@ -1,6 +1,5 @@
 ﻿using Controller;
 using Model;
-using System;
 using System.Windows;
 
 namespace WpfView
@@ -20,6 +19,7 @@ namespace WpfView
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            tableProducts.Items.Refresh();
             ShowtableProducts();            
         }
 
@@ -30,12 +30,22 @@ namespace WpfView
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
-        {
+        {            
             int prod = ((Product)tableProducts.SelectedItem).ProductID;
 
             ProductController prodC = new ProductController();
             prodC.Delete(prod);
+            MessageBox.Show("Produto excluido com sucesso!");
         }
 
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            tableProducts.Items.Refresh();
+        }
+
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            tableProducts.Items.Refresh();
+        }
     }
 }
