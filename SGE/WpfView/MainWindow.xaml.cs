@@ -13,14 +13,13 @@ namespace WpfView
 
         private void BtnRegisterProduct_Click(object sender, RoutedEventArgs e)
         {
-            RegisterProduct addProd = new RegisterProduct();           
+            RegisterProduct addProd = new RegisterProduct();
             addProd.ShowDialog();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            tableProducts.Items.Refresh();
-            ShowtableProducts();            
+        private void Window_Loaded_1(object sender, RoutedEventArgs e)
+        {           
+            ShowtableProducts();
         }
 
         private void ShowtableProducts()
@@ -30,7 +29,7 @@ namespace WpfView
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
-        {            
+        {
             int prod = ((Product)tableProducts.SelectedItem).ProductID;
 
             ProductController prodC = new ProductController();
@@ -38,14 +37,9 @@ namespace WpfView
             MessageBox.Show("Produto excluido com sucesso!");
         }
 
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
-        {
-            tableProducts.Items.Refresh();
-        }
-
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-            tableProducts.Items.Refresh();
-        }
+            ShowtableProducts();
+        }      
     }
 }

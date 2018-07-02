@@ -49,10 +49,5 @@ namespace Controller
         {
             return context.products.ToList();
         }
-
-        public IList<Product> ListCategoryOptions()
-        {
-            return context.products.ToList();
-        }
     }
 }

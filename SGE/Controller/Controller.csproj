@@ -49,7 +49,6 @@
   <ItemGroup>
     <Compile Include="Base\IBaseController.cs" />
     <Compile Include="CategoriesController.cs" />
-    <Compile Include="SubCategoriesController.cs" />
     <Compile Include="ProductController.cs" />
     <Compile Include="DAL\Context.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

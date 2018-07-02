@@ -8,7 +8,5 @@ namespace Model
 
         [Required(ErrorMessage = "Campo obrigatório")]
         public string Name { get; set; }
-
-
     }
 }
