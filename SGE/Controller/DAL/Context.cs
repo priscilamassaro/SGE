@@ -20,7 +20,6 @@ namespace Controller.DAL
         }
         public DbSet<Product> products { get; set; }
         public DbSet<Category> categories { get; set; }
-        public DbSet<SubCategory> subCategories { get; set; }
         public DbSet<TypeOfSkin> typeOfSkins { get; set; }
     }
 

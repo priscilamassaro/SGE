@@ -15,6 +15,7 @@ namespace WpfView
         {
             RegisterProduct addProd = new RegisterProduct();
             addProd.ShowDialog();
+            ShowtableProducts();
         }
 
         private void Window_Loaded_1(object sender, RoutedEventArgs e)
@@ -34,7 +35,8 @@ namespace WpfView
 
             ProductController prodC = new ProductController();
             prodC.Delete(prod);
-            MessageBox.Show("Produto excluido com sucesso!");
+            MessageBox.Show("O produto foi excluído!");
+            ShowtableProducts();
         }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)

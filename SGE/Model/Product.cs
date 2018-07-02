@@ -23,5 +23,7 @@ namespace Model
         public double Price { get; set; }
 
         public bool Available { get; set; }
+
+        public double Total { get; set; }
     }
 }

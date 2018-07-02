@@ -1,10 +1,7 @@
 ﻿using Controller.DAL;
 using Model;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Controller
 {
@@ -37,13 +34,9 @@ namespace Controller
             if (prod != null)
             {
                 context.products.Remove(prod);
+                context.SaveChanges();
             }
         }  
-
-        public IList<Product> ListByName(string name)
-        {
-            return context.products.Where(prod => prod.Name == name).ToList();
-        }
 
         public IList<Product> ListAll()
         {

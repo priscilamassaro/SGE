@@ -23,15 +23,16 @@
         <Label x:Name="LabelRegisterTitle" Content="Produtos Cadastrados" Grid.Column="1" HorizontalAlignment="Left" Margin="34,10,0,0" VerticalAlignment="Top" Height="29" RenderTransformOrigin="0.088,0" Grid.Row="1" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2"/>
         <Menu x:Name="Menu" HorizontalAlignment="Left" Height="343" Grid.Row="1" VerticalAlignment="Top" Width="88" Grid.RowSpan="2"/>
         <Image x:Name="Logo" HorizontalAlignment="Left" Height="38" VerticalAlignment="Top" Width="88"/>
-        <DataGrid x:Name="tableProducts" ItemsSource="{Binding Source=Product}" Grid.Column="1" HorizontalAlignment="Left" Height="234" Margin="34,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="638" Grid.ColumnSpan="3" Grid.RowSpan="2" AutoGenerateColumns="False">
+        <DataGrid x:Name="tableProducts" ItemsSource="{Binding Source=Product}" Grid.Column="1" HorizontalAlignment="Left" Height="234" Margin="34,44,0,0" Grid.Row="1" VerticalAlignment="Top" Width="638" Grid.ColumnSpan="3" Grid.RowSpan="2" AutoGenerateColumns="False" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="ID"            Binding="{Binding Path=ProductID}" />
                 <DataGridTextColumn Header="Produto"       Binding="{Binding Path=Name}" />
                 <DataGridTextColumn Header="Categoria"     Binding="{Binding Path=CategoryID}" />                
-                <DataGridTextColumn Header="Tipo de pele"   Binding="{Binding Path=TypeOfSkinID}" />
-                <DataGridTextColumn Header="Quantidade"     Binding="{Binding Path=Quantity}" />
-                <DataGridTextColumn Header="Preço"          Binding="{Binding Path=Price}" />                
-                <DataGridTextColumn Header="Disponível"     Binding="{Binding Path=Available}" />
+                <DataGridTextColumn Header="Tipo de pele"  Binding="{Binding Path=TypeOfSkinID}" />
+                <DataGridTextColumn Header="Quantidade"    Binding="{Binding Path=Quantity}" />
+                <DataGridTextColumn Header="Preço"         Binding="{Binding Path=Price}" />
+                <DataGridTextColumn Header="Disponível"    Binding="{Binding Path=Available}" />
+                <DataGridTextColumn Header="Total"         Binding="{Binding Path=Total}" />
                 <DataGridTemplateColumn>
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>

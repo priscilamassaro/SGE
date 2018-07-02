@@ -28,9 +28,10 @@ namespace WpfView
                 prod.Quantity = int.Parse(TxtQuantity.Text);
                 prod.CategoryID = ((Category)SelectCategory.SelectedItem).CategoryID;
                 prod.TypeOfSkinID = ((TypeOfSkin)SelectTypeOfSkin.SelectedItem).TypeOfSkinID;
+                prod.Total = (prod.Quantity * prod.Price);
 
                 productController.AddProduct(prod);
-                MessageBox.Show("Produto salvo com sucesso!");
+                MessageBox.Show("Produto cadastrado com sucesso!");
                 this.Close();
             }
             catch (Exception ex)
